@@ -1,0 +1,114 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/59/01/c3/5901c34b547e40dbed24466071b4110c.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    display: flex;
+
+}
+.background-phandf-div {
+    position: relative;
+    margin-top: 60vh;
+    margin-left: 200px;
+}
+.dr-img {
+    width: 300px;
+    margin-top: 170px;
+}
+.bg {
+    width:100px;
+}
+.platypuss {
+    padding: 15px;
+    background-color: white;
+    border-radius: 40px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.rocket{
+    transform: translate(-50%, -50%) rotate(-5deg);
+    animation: shake 0.1s infinite alternate;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+@keyframes shake {
+    25% { transform: translate(-50%, -50%) rotate(5deg); }
+    50% { transform: translate(-50%, -50%) rotate(-5deg); } 
+    75% { transform: translate(-50%, -50%) rotate(5deg); }
+    100% { transform: translate(-50%, -50%) rotate(-5deg); } 
+}
+
+.hat {
+    position: absolute;
+    animation: drop 2s linear infinite;
+    width: 220px;
+}
+@keyframes drop {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 300px;
+    }
+}
+.img {
+    transition: transform 0.3s ease;
+}
+.img:hover {
+    transform: scale(1.1);
+}
